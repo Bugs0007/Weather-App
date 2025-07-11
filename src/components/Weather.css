@@ -1,0 +1,127 @@
+.weather {
+    place-self: center;
+    padding: 40px 24px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #1a1a2e, #3a4452);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    max-width: 400px;
+    width: 100%;
+    margin: 32px auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 6px 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    margin-bottom: 24px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.search-bar input {
+    height: 44px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 0 20px;
+    color: #626262;
+    background-color: #ebfffc;
+    font-size: 18px;
+    flex: 1;
+    transition: box-shadow 0.2s;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 0 2px #3a4452;
+}
+
+.search-bar img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.search-bar img:hover {
+    transform: scale(1.1);
+}
+
+.weather-icon {
+    width: 120px;
+    height: 120px;
+    margin: 16px 0 8px 0;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.15));
+}
+
+.temperature {
+    font-size: 48px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 8px 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.location {
+    font-size: 24px;
+    font-weight: 400;
+    color: #e0e0e0;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.weather-data {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-top: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    gap: 16px;
+}
+
+.weather-data .col {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 22px;
+}
+
+.weather-data .col span {
+    display: block;
+    font-size: 16px;
+}
+
+.weather-data .col img {
+    width: 26px;
+    margin-top: 10px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 500px) {
+    .weather {
+        padding: 24px 8px;
+        max-width: 95vw;
+    }
+    .search-bar {
+        max-width: 100%;
+        padding: 4px 6px;
+    }
+    .search-bar input {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
